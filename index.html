@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex flex-row">
+      <section
+        class="bg-cover h-screen w-8/12" style="background-image: url(./images/bg-noel.jpeg)">
+        <div class="flex flex-col items-center my-4">
+          <h1 class="text-slate-200 text-5xl font-serif italic">Blizzard</h1>
+          <p class="text-slate-200 text-4xl font-serif italic">
+            Célébrez la magie de Noël
+          </p>
+          <p class="text-slate-200 text-4xl font-serif italic">
+            avec des offres exclusives !
+          </p>
+
+          <p class="text-slate-200 text-4xl font-serif italic">
+            Découvrez des cadeaux uniques
+          </p>
+          <p class="text-slate-200 text-4xl font-serif italic">et</p>
+
+          <p class="text-slate-200 text-4xl font-serif italic">
+            créez des souvenirs mémorables.
+          </p>
+
+          <p class="text-slate-200 text-4xl font-serif italic">
+            Rejoignez-nous pour une saison festive
+          </p>
+          <p class="text-slate-200 text-4xl font-serif italic">
+            pleine de surprises et de joie.
+          </p>
+        </div>
+      </section>
+      <div class="p-8 mx-auto" id="item">
+         <h1 class="text-4xl text-red-500 font-serif italic">Nous rejoindre</h1>
+          <form class="mt-10 space-y-3" id="form" method="POST">
+            <select
+              class="block bg-slate-100 rounded p-3 w-full shadow" required  name="civilite" id="civilite">
+              <option value="" disabled selected>Civilité</option>
+              <option value="Monsieur">Monsieur</option>
+              <option value="Madame">Madame</option>
+            </select>
+            <span class="text-red-500 text-xs"></span>
+            <input class=" block bg-slate-100 rounded p-3 w-full shadow" required min="2" max="50" type="text" placeholder="Nom" id="nom" />
+            <span class="text-red-500 text-xs"></span>
+            <input class=" block bg-slate-100 rounded p-3 w-full shadow" required min="2" max="50" type="text" placeholder="Prénom" id="prenom"/>
+            <span class="text-red-500 text-xs"></span>
+            <select class=" block bg-slate-100 rounded p-3 w-full shadow " required name="ville" id="ville">
+              <option value="" disabled selected>Ville du Val d'Oise</option>
+            </select>
+            <span class="text-red-500 text-xs"></span>
+            <input class="block bg-slate-100 rounded p-3 w-full shadow" pattern="^(06|07)\d{8}$" required type="text" id="telephone" placeholder="Téléphone"/>
+            <span class="text-red-500 text-xs"></span>
+            <button class="block w-full rounded p-2 bg-gradient-to-r from-red-500 via-red-600 to-red-700" id="submit" type="submit">Envoyer</button>
+          </form>
+        </div>
+    </div>
+  </body>
+</html>
+
+<script src="./script.js"></script>
